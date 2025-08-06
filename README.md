@@ -1,4 +1,5 @@
 Estimation of Scale Parameter for Cauchy Distribution
+
 📌 Overview
 This project proposes a fractional moment-based estimator for the scale parameter (σ) of the Cauchy distribution — a heavy-tailed distribution with undefined mean and variance.
 The method is compared with Quartile Deviation (QD) and Maximum Likelihood Estimator (MLE) via R simulations.
