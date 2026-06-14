@@ -42,10 +42,12 @@ The proposed estimator showed:
 ## Author
 
 **Debapriyo Bhar**
+
 B.Sc. Statistics, Ramakrishna Mission Residential College, Narendrapur
 
 ## Project Guide
 
 **Dr. Sabyasachi Bhattacharya**
+
 Professor, Indian Statistical Institute (ISI), Kolkata
 
