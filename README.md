@@ -38,3 +38,14 @@ The proposed estimator showed:
 * Extension to multivariate Cauchy distributions
 * Application to other heavy-tailed distributions
 * Real-world use in finance, signal processing, and robust data analysis
+
+## Author
+
+**Debapriyo Bhar**
+B.Sc. Statistics, Ramakrishna Mission Residential College, Narendrapur
+
+## Project Guide
+
+**Dr. Sabyasachi Bhattacharya**
+Professor, Indian Statistical Institute (ISI), Kolkata
+
