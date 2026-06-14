@@ -1,34 +1,40 @@
-Estimation of Scale Parameter for Cauchy Distribution
+# Estimation of Scale Parameter for Cauchy Distribution
 
-📌 Overview
+This project proposes a **fractional moment-based estimator** for the scale parameter of the Cauchy distribution, a challenging problem due to the absence of finite integer moments.
 
-This project proposes a fractional moment-based estimator for the scale parameter (σ) of the Cauchy distribution — a heavy-tailed distribution with undefined mean and variance.
-The method is compared with Quartile Deviation (QD) and Maximum Likelihood Estimator (MLE) via R simulations.
+## Overview
 
-🎯 Key Points
+* Derived a new estimator using fractional moments of order α ∈ (-1,1).
+* Studied its limiting behaviour as α → 0.
+* Compared the proposed estimator with:
 
-Uses fractional moments (α ∈ (-1,0) ∪ (0,1)) for robust estimation.
+  * Maximum Likelihood Estimator (MLE)
+  * Quartile Deviation (QD)
 
-Outperforms QD and MLE in terms of bias and MSE.
+## Methodology
 
-Applicable to other heavy-tailed distributions.
+* Simulated 1000 Cauchy-distributed samples in **R**
+* Evaluated estimator performance using:
 
-⚙️ Method
+  * Bias
+  * Mean Squared Error (MSE)
 
-We have Derived an Estimator using method of moments estimation
- 
-Simulate Cauchy data (µ=5, σ=2) in R.
+## Results
 
-Compare bias & MSE for proposed, QD, and MLE estimators.
+The proposed estimator showed:
 
-📊 Results
+* Lower bias than classical estimators for optimal α
+* Lower MSE in specific parameter ranges
+* Greater robustness against outliers and heavy-tailed behaviour
 
-Best α ≈ 0.06 for minimum bias.
+## Tools Used
 
-Proposed estimator: narrow, symmetric distribution around true σ.
+* R Programming
+* Overleaf (LaTeX)
+* Packages: psych, cauchypca
 
-QD: higher MSE; MLE: sensitive to outliers.
+## Future Scope
 
-Author: Debapriyo Bhar, Arkabrata Mondal
-
-Guide: Prof. Sabyasachi Bhattacharya, Professor, ISI Kolkata
+* Extension to multivariate Cauchy distributions
+* Application to other heavy-tailed distributions
+* Real-world use in finance, signal processing, and robust data analysis
