@@ -298,7 +298,6 @@ Indian Statistical Institute (ISI), Kolkata
 
 <p align="center">
 
-⭐ If you found this project interesting, consider giving it a star!
 
 </p>
 
