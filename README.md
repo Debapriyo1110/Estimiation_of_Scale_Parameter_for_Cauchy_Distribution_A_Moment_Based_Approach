@@ -14,7 +14,11 @@ A Fractional Moment-Based Approach
 
 <b>Research Internship Project</b><br>
 
-Applied Statistics & Econometrics Research Unit (AERU)<br>
+<b>Supported by the Department of Science and Technology (DST), Government of India</b>
+
+<br><br>
+
+Agricultural and Ecological Research Unit (AERU)<br>
 
 Indian Statistical Institute (ISI), Kolkata
 
@@ -30,6 +34,8 @@ Indian Statistical Institute (ISI), Kolkata
 
 <img src="https://img.shields.io/badge/Heavy--Tailed-Distributions-orange?style=for-the-badge"/>
 
+<img src="https://img.shields.io/badge/DST-Government%20of%20India-success?style=for-the-badge"/>
+
 <img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex"/>
 
 <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
@@ -40,39 +46,36 @@ Indian Statistical Institute (ISI), Kolkata
 
 # 🌟 Project Highlights
 
-- 🔹 Novel **Fractional Moment-Based Estimator** for the Cauchy scale parameter
-- 🔹 Research on **Heavy-Tailed Statistical Distributions**
-- 🔹 Extensive **Monte Carlo Simulation Study**
-- 🔹 Comparative analysis with **Maximum Likelihood Estimation (MLE)** and **Quartile Deviation (QD)**
-- 🔹 Performance evaluation using **Bias** and **Mean Squared Error (MSE)**
-- 🔹 Implemented entirely in **R Programming**
+- 🔹 Proposed a **Novel Fractional Moment-Based Estimator** for the Cauchy Scale Parameter.
+- 🔹 Developed a statistically robust estimation approach for **Heavy-Tailed Distributions**.
+- 🔹 Conducted an extensive **Monte Carlo Simulation Study**.
+- 🔹 Compared the proposed estimator with **Maximum Likelihood Estimation (MLE)** and **Quartile Deviation (QD)**.
+- 🔹 Evaluated estimator performance using **Bias** and **Mean Squared Error (MSE)**.
+- 🔹 Entire implementation carried out in **R Programming**.
+- 🔹 Research Internship supported by the **Department of Science and Technology (DST), Government of India**.
 
 ---
 
 # 📖 Project Overview
 
-The **Cauchy distribution** is a classical heavy-tailed probability distribution whose mean and variance are undefined. As a result, conventional moment-based estimation techniques cannot be applied directly.
+This repository contains a research internship project carried out at the **Agricultural and Ecological Research Unit (AERU), Indian Statistical Institute (ISI), Kolkata**, under the support of the **Department of Science and Technology (DST), Government of India**.
 
-This research proposes a **fractional moment-based estimator** for estimating the **scale parameter** of the Cauchy distribution. The proposed approach exploits the existence of fractional moments over the interval
+The **Cauchy distribution** is a well-known heavy-tailed probability distribution whose mean and variance are undefined. Consequently, conventional moment-based estimation methods fail for parameter estimation.
 
-```math
--1 < \alpha < 1,
-```
+To address this challenge, this work proposes a **fractional moment-based estimator** for estimating the **scale parameter** of the Cauchy distribution. By exploiting finite fractional moments, the proposed approach provides a robust and efficient alternative for parameter estimation.
 
-allowing efficient estimation where ordinary moments fail.
-
-The estimator is evaluated through an extensive Monte Carlo simulation study and compared with well-known classical estimators, including **Maximum Likelihood Estimation (MLE)** and **Quartile Deviation (QD)**.
+The estimator is validated through extensive Monte Carlo simulation studies and compared with well-established classical estimators including **Maximum Likelihood Estimation (MLE)** and **Quartile Deviation (QD)**.
 
 ---
 
 # 🎯 Objectives
 
-- Investigate the estimation problem for the Cauchy scale parameter.
-- Develop a fractional moment-based estimator.
-- Study the limiting behaviour as **α → 0**.
-- Compare the proposed estimator with MLE and Quartile Deviation.
-- Evaluate estimator performance using Monte Carlo simulations.
-- Analyse statistical performance through Bias and Mean Squared Error (MSE).
+- Study the statistical challenges associated with the Cauchy distribution.
+- Develop a fractional moment-based estimator for the scale parameter.
+- Investigate the limiting behaviour as **α → 0**.
+- Compare the proposed estimator with classical estimation methods.
+- Evaluate estimator performance through Monte Carlo simulations.
+- Analyse statistical efficiency using Bias and Mean Squared Error (MSE).
 
 ---
 
@@ -94,14 +97,14 @@ f(x;\mu,\sigma)=
 \qquad x\in\mathbb{R}.
 ```
 
-Although the Cauchy distribution has **no finite mean or variance**, its fractional moments satisfy
+Although the Cauchy distribution has **no finite mean or variance**, the fractional moments
 
 ```math
 E|X-\mu|^{\alpha},
 \qquad -1<\alpha<1,
 ```
 
-which forms the theoretical foundation of the proposed estimator.
+exist and form the theoretical foundation of the proposed estimator.
 
 ---
 
@@ -111,10 +114,9 @@ which forms the theoretical foundation of the proposed estimator.
 flowchart LR
 
 A[Cauchy Distribution]
-
 -->B[Fractional Moments]
 
-B-->C[Proposed Estimator]
+B-->C[Derivation of Proposed Estimator]
 
 C-->D[Monte Carlo Simulation]
 
@@ -122,12 +124,13 @@ D-->E[Bias Analysis]
 
 D-->F[MSE Analysis]
 
-E-->G[Performance Comparison]
+E-->G[Comparison with MLE & QD]
 
 F-->G
 
-G-->H[Results & Conclusions]
+G-->H[Performance Evaluation]
 
+H-->I[Research Conclusions]
 ```
 
 ---
@@ -135,7 +138,7 @@ G-->H[Results & Conclusions]
 # ⚙️ Simulation Configuration
 
 | Parameter | Value |
-|-----------|--------|
+|-----------|:------:|
 | Sample Size | **n = 14** |
 | Number of Simulations | **1000** |
 | Location Parameter | **μ = 5** |
@@ -146,7 +149,7 @@ G-->H[Results & Conclusions]
 
 # 📈 Proposed Estimator
 
-The proposed estimator for the scale parameter is given by
+The proposed estimator for the scale parameter is defined as
 
 ```math
 \hat{\sigma}_{\alpha}
@@ -179,21 +182,21 @@ As
 \alpha \rightarrow 0,
 ```
 
-the estimator converges to the geometric mean estimator, providing a natural connection between fractional moment estimation and classical robust estimation techniques.
+the estimator converges to the **geometric mean estimator**, establishing a natural link between fractional moment estimation and robust statistical estimation.
 
 ---
 
 # 📊 Performance Evaluation
 
-The proposed estimator was assessed using extensive Monte Carlo simulations and compared with two widely used classical estimators.
+The proposed estimator was compared with two widely used classical estimators through extensive Monte Carlo simulations.
 
 ### Compared Estimators
 
-- Maximum Likelihood Estimator (MLE)
-- Quartile Deviation (QD)
-- Proposed Fractional Moment Estimator
+- 📌 Maximum Likelihood Estimator (MLE)
+- 📌 Quartile Deviation (QD)
+- 📌 Proposed Fractional Moment Estimator
 
-### Performance Measures
+### Performance Criteria
 
 - **Bias**
 
@@ -213,52 +216,39 @@ E[(\hat{\sigma}-\sigma)^2]
 
 # 🏆 Key Findings
 
-The simulation study demonstrates that the proposed estimator:
+The proposed estimator demonstrates:
 
-- ✅ Achieves lower bias for suitable values of **α**.
-- ✅ Produces lower Mean Squared Error in several parameter settings.
-- ✅ Is robust against the heavy-tailed behaviour of the Cauchy distribution.
-- ✅ Performs competitively with Maximum Likelihood Estimation (MLE).
-- ✅ Outperforms the Quartile Deviation estimator in terms of efficiency for many cases.
-- ✅ Converges smoothly to the geometric mean estimator as **α → 0**.
+- ✅ Lower bias for appropriate choices of **α**
+- ✅ Lower Mean Squared Error in several simulation settings
+- ✅ Strong robustness against heavy-tailed observations
+- ✅ Competitive performance compared with Maximum Likelihood Estimation
+- ✅ Improved efficiency over the Quartile Deviation estimator
+- ✅ Smooth convergence to the geometric mean estimator as **α → 0**
 
 ---
 
-# 📊 Included Visualisations
+# 📊 Repository Contents
 
-The repository contains graphical analyses including:
+The repository includes:
 
-- 📈 Absolute Bias vs. α
-- 📈 Mean Squared Error vs. α
-- 📊 Histogram of the Proposed Estimator
-- 📊 Histogram of the Maximum Likelihood Estimator
-- 📊 Histogram of the Quartile Deviation Estimator
+- 📘 Complete Research Report
+- 📄 Internship Completion Certificate
+- 💻 Fully Documented R Source Code
+- 📈 Monte Carlo Simulation Results
+- 📊 Bias and MSE Analysis
+- 📉 Comparative Performance Study
+- 📚 Project Documentation
 
 ---
 
 # 🛠 Software & Technologies
 
-### Programming Language
-
-- **R**
-
-### R Packages
-
-- psych
-- cauchypca
-- graphics
-
-### Documentation
-
-- LaTeX (Overleaf)
-
-### Statistical Techniques
-
-- Fractional Moment Estimation
-- Monte Carlo Simulation
-- Bias Analysis
-- Mean Squared Error Analysis
-- Robust Statistical Estimation
+| Category | Tools |
+|----------|-------|
+| Programming Language | **R** |
+| Statistical Packages | psych, cauchypca, graphics |
+| Documentation | LaTeX (Overleaf) |
+| Statistical Methods | Fractional Moments, Monte Carlo Simulation, Robust Estimation |
 
 ---
 
@@ -278,28 +268,28 @@ The repository contains graphical analyses including:
 
 # 🔬 Research Contribution
 
-This work introduces a fractional moment-based estimator for estimating the scale parameter of the Cauchy distribution by exploiting the existence of finite fractional moments.
+This project proposes a **fractional moment-based estimator** for estimating the scale parameter of the Cauchy distribution, addressing one of the fundamental challenges posed by heavy-tailed distributions where conventional moment-based techniques are not applicable.
 
-A comprehensive Monte Carlo simulation study was conducted to investigate its statistical properties and compare its performance with established estimation methods using Bias and Mean Squared Error (MSE) as evaluation criteria.
+The estimator was theoretically derived and validated through comprehensive Monte Carlo simulation studies, with its statistical performance evaluated using **Bias** and **Mean Squared Error (MSE)**. The study demonstrates that fractional moments provide an effective framework for robust parameter estimation.
 
 ---
 
 # 🚀 Future Scope
 
-Potential directions for future research include:
+Potential directions for future work include:
 
 - Extension to multivariate Cauchy distributions.
 - Generalization to other heavy-tailed probability distributions.
-- Applications in financial risk modelling.
-- Robust parameter estimation in signal processing.
-- Bayesian approaches for heavy-tailed distributions.
-- Integration with machine learning methods for robust statistical inference.
+- Robust statistical modelling for financial data.
+- Applications in environmental and ecological statistics.
+- Bayesian estimation for heavy-tailed models.
+- Integration with modern machine learning techniques.
 
 ---
 
-# 👨‍🎓 Author
+# 👨‍💻 Author
 
-**Debapriyo Bhar**
+## Debapriyo Bhar
 
 **B.Sc. Major in Statistics**
 
@@ -315,11 +305,11 @@ https://www.linkedin.com/in/debapriyo-bhar-5074a6303
 
 # 🎓 Research Supervisor
 
-**Prof. Sabyasachi Bhattacharya**
+## Prof. Sabyasachi Bhattacharya
 
 Professor
 
-Applied Statistics & Econometrics Research Unit (AERU)
+**Agricultural and Ecological Research Unit (AERU)**
 
 Indian Statistical Institute (ISI), Kolkata
 
@@ -327,10 +317,32 @@ Indian Statistical Institute (ISI), Kolkata
 
 # 🙏 Acknowledgements
 
-I sincerely express my gratitude to **Prof. Sabyasachi Bhattacharya** for his invaluable guidance, continuous encouragement, and insightful suggestions throughout this research internship. I also acknowledge the **Applied Statistics & Econometrics Research Unit (AERU), Indian Statistical Institute (ISI), Kolkata**, for providing an excellent academic environment to conduct this work.
+This research was carried out during a **Research Internship at the Agricultural and Ecological Research Unit (AERU), Indian Statistical Institute (ISI), Kolkata**, under the support of the **Department of Science and Technology (DST), Government of India**.
+
+I sincerely express my heartfelt gratitude to **Prof. Sabyasachi Bhattacharya** for his invaluable guidance, encouragement, and continuous support throughout this research. His mentorship greatly contributed to the successful completion of this work.
+
+I also thank the **Agricultural and Ecological Research Unit (AERU), Indian Statistical Institute (ISI), Kolkata**, for providing an inspiring research environment and the necessary academic resources.
+
+---
+
+# ⭐ If you found this repository useful...
+
+<p align="center">
+
+⭐ Star this repository
+
+🍴 Fork it
+
+📢 Share it with fellow researchers
+
+</p>
 
 ---
 
 <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:00C9FF,50:26D0CE,100:1A2980&section=footer"/>
+</p>
+
+<p align="center">
+<b>Made with ❤️ using R, Statistics and Research.</b>
 </p>
