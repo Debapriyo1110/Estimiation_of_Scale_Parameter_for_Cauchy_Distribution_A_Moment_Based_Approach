@@ -12,9 +12,9 @@ A Fractional Moment-Based Approach
 
 <p align="center">
 
-<b>Research Internship Project</b><br>
+<b>DST Approved Research Internship Project</b><br>
 
-<b>Supported by the Department of Science and Technology (DST), Government of India</b>
+Department of Science and Technology (DST), Government of India
 
 <br><br>
 
@@ -24,6 +24,7 @@ Indian Statistical Institute (ISI), Kolkata
 
 </p>
 
+<img src="https://img.shields.io/badge/DST-Approved%20Research%20Project-success?style=for-the-badge"/>
 <p align="center">
 
 <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white"/>
@@ -58,7 +59,7 @@ Indian Statistical Institute (ISI), Kolkata
 
 # 📖 Project Overview
 
-This repository contains a research internship project carried out at the **Agricultural and Ecological Research Unit (AERU), Indian Statistical Institute (ISI), Kolkata**, under the support of the **Department of Science and Technology (DST), Government of India**.
+This repository presents a **DST Approved Research Internship Project** carried out at the **Agricultural and Ecological Research Unit (AERU), Indian Statistical Institute (ISI), Kolkata**.
 
 The **Cauchy distribution** is a well-known heavy-tailed probability distribution whose mean and variance are undefined. Consequently, conventional moment-based estimation methods fail for parameter estimation.
 
