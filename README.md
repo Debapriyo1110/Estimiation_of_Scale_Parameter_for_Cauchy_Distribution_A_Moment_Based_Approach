@@ -24,8 +24,9 @@ Indian Statistical Institute (ISI), Kolkata
 
 </p>
 
-<img src="https://img.shields.io/badge/DST-Approved%20Research%20Project-success?style=for-the-badge"/>
 <p align="center">
+
+<img src="https://img.shields.io/badge/DST-Approved%20Research%20Project-success?style=for-the-badge"/>
 
 <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white"/>
 
